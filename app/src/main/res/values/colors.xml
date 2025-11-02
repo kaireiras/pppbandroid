@@ -2,4 +2,37 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary Colors - Enhanced Contrast -->
+    <color name="primary">#4F46E5</color>
+    <color name="primary_dark">#3730A3</color>
+    <color name="primary_light">#6366F1</color>
+
+    <!-- Secondary Colors - Enhanced Contrast -->
+    <color name="secondary">#DC2626</color>
+    <color name="secondary_dark">#991B1B</color>
+
+    <!-- Background Colors -->
+    <color name="background">#F9FAFB</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Text Colors - Better Contrast -->
+    <color name="text_primary">#111827</color>
+    <color name="text_secondary">#4B5563</color>
+    <color name="text_hint">#9CA3AF</color>
+    <color name="text_light">#6B7280</color>
+
+    <!-- Status Colors - Enhanced for Visibility -->
+    <color name="success">#059669</color>
+    <color name="error">#DC2626</color>
+    <color name="warning">#D97706</color>
+
+    <!-- Border Colors -->
+    <color name="border">#D1D5DB</color>
+    <color name="divider">#E5E7EB</color>
+
+    <!-- Overlay Colors -->
+    <color name="overlay_dark">#1F2937</color>
+    <color name="overlay_light">#F3F4F6</color>
 </resources>

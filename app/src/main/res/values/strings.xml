@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">ContactApp</string>
+
+    <!-- Content Descriptions -->
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="app_logo">App Logo</string>
+
+    <!-- Login Activity -->
+    <string name="welcome">Selamat Datang</string>
+    <string name="login_subtitle">Masuk ke akun Anda</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Masuk</string>
+    <string name="no_account">Belum punya akun? </string>
+    <string name="register_here">Daftar disini</string>
+
+    <!-- Register Activity -->
+    <string name="create_account">Buat Akun Baru</string>
+    <string name="register_subtitle">Daftar untuk memulai</string>
+    <string name="retype_password">Re-type Password</string>
+    <string name="register">Daftar</string>
+    <string name="have_account">Sudah punya akun? </string>
+    <string name="login_here">Login disini</string>
+
+    <!-- Main Activity -->
+    <string name="contact_list">Daftar Kontak</string>
+    <string name="add_contact">Tambah Kontak</string>
+
+    <!-- Contact Item -->
+    <string name="contact_name">Nama Kontak</string>
+    <string name="contact_email">email@example.com</string>
+    <string name="contact_phone">08123456789</string>
+
+    <!-- Dialog -->
+    <string name="dialog_title">Tambah Kontak</string>
+    <string name="name">Nama</string>
+    <string name="email">Email</string>
+    <string name="phone">Nomor Telepon</string>
+
+    <!-- Profile Activity -->
+    <string name="profile_icon">👤</string>
+    <string name="login_as">Login sebagai: -</string>
+    <string name="manage_profile">Kelola profil Anda</string>
+    <string name="back_to_contacts">Kembali ke Kontak</string>
+    <string name="logout">Log Out</string>
 </resources>

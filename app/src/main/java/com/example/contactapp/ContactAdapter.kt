@@ -19,6 +19,7 @@ class ContactAdapter(
         val tvName: TextView = itemView.findViewById(R.id.tv_contact_name)
         val tvEmail: TextView = itemView.findViewById(R.id.tv_contact_email)
         val tvPhone: TextView = itemView.findViewById(R.id.tv_contact_phone_number)
+        val tvInitial: TextView = itemView.findViewById(R.id.tv_contact_initial)
         val btnEdit: ImageButton = itemView.findViewById(R.id.btn_edit_contact)
         val btnDelete: ImageButton = itemView.findViewById(R.id.btn_delete_contact)
     }
@@ -37,6 +38,14 @@ class ContactAdapter(
         holder.tvName.text = contact.name
         holder.tvEmail.text = contact.email
         holder.tvPhone.text = contact.phone
+
+        // Set initial avatar
+        val initial = if (contact.name.isNotEmpty()) {
+            contact.name.first().uppercase()
+        } else {
+            "?"
+        }
+        holder.tvInitial.text = initial
 
         // Tombol Edit
         holder.btnEdit.setOnClickListener {
