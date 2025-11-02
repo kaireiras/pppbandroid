@@ -1,47 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-android:orientation="vertical"
-android:layout_width="match_parent"
-android:layout_height="match_parent">
-
-<androidx.appcompat.widget.Toolbar
-    android:id="@+id/toolbar"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
-    android:background="?attr/colorPrimary"
-    android:paddingEnd="32dp"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-    app:title="Contact List"
-    app:titleTextColor="@android:color/white" />
+    android:layout_height="match_parent"
+    android:background="@color/background">
 
+    <!-- Toolbar with enhanced styling -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:elevation="8dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="@string/contact_list"
+        app:titleTextColor="@color/white"
+        app:titleTextAppearance="@style/ToolbarTitleStyle" />
+
+    <!-- Empty State or Contact List -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewContacts"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:padding="12dp"
+        android:clipToPadding="false" />
 
+    <!-- Bottom Action Button with Enhanced Styling -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp"
-        android:weightSum="2">
+        android:padding="16dp"
+        android:background="@color/surface"
+        android:elevation="12dp">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnTambahKontak"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Tambah Kontak"
-            android:layout_marginStart="8dp"
-            android:textColor="@android:color/white"
-            android:textStyle="bold" />
-
-
-
+            android:text="@string/add_contact"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            app:cornerRadius="12dp"
+            app:icon="@android:drawable/ic_menu_add"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/white"
+            app:elevation="4dp" />
     </LinearLayout>
 </LinearLayout>
